@@ -11,23 +11,18 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.A. in Physics, University of California, Berkeley, 2002
+* Ph.D in Physics, University of Michigan, 2006
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2016 - present: Applications Physicist II
+* 2012 - 2016: Applications Physicist I
+* 2011 - 2012: Research Scientist
+* 2006 - 2011: Postdoctoral Research Associate
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
   
-Skills
+SkillB.S.s
 ======
 * Skill 1
 * Skill 2
