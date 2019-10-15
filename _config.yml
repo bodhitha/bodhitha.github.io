@@ -7,9 +7,9 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Bodhitha Jayatilaka"
+title                    : "Bo Jayatilaka"
 title_separator          : "-"
-name                     : &name "Bodhitha Jayatilaka"
+name                     : &name "Bo Jayatilaka"
 description              : &description "Scientist at Fermi National Acclerator Laboratory"
 url                      : https://bodhitha.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -82,7 +82,7 @@ analytics:
 author:
   name             : "Bo Jayatilaka"
   avatar           : "profile.png"
-  bio              : "Scientist"
+  bio              : "Scientist at <a href=http://www.fnal.gov>Fermilab</a>"
   location         : "Chicago, IL"
   employer         :
   googlescholar    : 
