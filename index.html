@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ═══ EDIT: title & description (this is what Google shows) ═══ -->
+<title>Bo Jayatilaka — Senior Scientist, Fermi National Accelerator Laboratory</title>
+<meta name="description" content="Particle physicist at Fermilab working with the Large Hadron Collider at CERN">
+<meta property="og:title" content="Bo Jayatilaka — Particle Physicist">
+<meta property="og:description" content="Experimental high energy collider physics">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..600;1,8..60,400&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --paper:#fbfbfa;
+  --ink:#1a1d21;
+  --body-ink:#33383e;
+  --muted:#71787f;
+  --rule:#dcdfe2;
+  --link:#1d4a8f;
+  --ui:"Archivo",system-ui,sans-serif;
+  --serif:"Source Serif 4",Georgia,serif;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--body-ink);
+  font-family:var(--serif);font-size:15.5px;line-height:1.55;
+  font-variant-numeric:tabular-nums;
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+
+a{color:var(--link);text-underline-offset:2px;text-decoration-thickness:.5px}
+:focus-visible{outline:2px solid var(--link);outline-offset:2px}
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:8px;top:8px;background:var(--ink);color:#fff;padding:8px 12px;z-index:9}
+
+/* ── shell ── */
+.page{max-width:1000px;margin:0 auto;padding:44px 26px 64px;display:grid;gap:44px}
+@media(min-width:840px){
+  .page{grid-template-columns:212px 1fr;gap:0 56px;padding-top:64px}
+  .side{position:sticky;top:64px;align-self:start}
+}
+
+/* ── sidebar ── */
+.side .photo{
+  display:block;width:100%;max-width:148px;aspect-ratio:1/1;
+  object-fit:cover;margin:0 0 16px;background:var(--rule);
+}
+.side h1{
+  font-family:var(--ui);font-weight:600;font-size:20px;line-height:1.2;
+  letter-spacing:-.015em;color:var(--ink);margin:0 0 6px;
+}
+.side .role{font-family:var(--ui);font-size:12.5px;line-height:1.45;color:var(--muted);margin:0 0 20px}
+.side nav{display:grid;gap:4px;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--rule)}
+.side nav a{font-family:var(--ui);font-size:13px;color:var(--body-ink);text-decoration:none}
+.side nav a:hover{color:var(--link);text-decoration:underline}
+.side .meta{font-family:var(--ui);font-size:12.5px;line-height:1.7;color:var(--muted)}
+.side .meta a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.side .meta a:hover{color:var(--link);border-color:var(--link)}
+.side .meta p{margin:0 0 10px}
+
+/* ── sections ── */
+section{margin-bottom:38px}
+section:last-child{margin-bottom:0}
+h2{
+  font-family:var(--ui);font-weight:600;font-size:11.5px;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--muted);
+  margin:0 0 12px;padding-bottom:7px;border-bottom:1px solid var(--ink);
+}
+.intro{font-size:16.5px;line-height:1.5;color:var(--ink);margin:0 0 14px;max-width:34em}
+p{margin:0 0 11px;max-width:38em}
+p:last-child{margin-bottom:0}
+
+/* ── research ── */
+.area{padding:12px 0;border-bottom:1px solid var(--rule)}
+.area:last-child{border-bottom:0;padding-bottom:0}
+.area h3{font-family:var(--serif);font-weight:600;font-size:15.5px;color:var(--ink);margin:0 0 4px;line-height:1.35}
+.area p{font-size:14.5px;margin:0}
+.keys{font-family:var(--ui);font-size:11.5px;color:var(--muted);margin-top:5px}
+
+/* ── publications ── */
+.morelink{font-family:var(--ui);font-size:12.5px;color:var(--muted);margin-top:10px}
+.morelink a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.morelink a:hover{color:var(--link);border-color:var(--link)}
+
+.pub{display:grid;grid-template-columns:38px 1fr;gap:14px;padding:9px 0;border-bottom:1px solid var(--rule)}
+.pub .yr{font-family:var(--ui);font-size:12px;color:var(--muted);padding-top:2px}
+.pub .t{font-weight:600;color:var(--ink);line-height:1.35;font-size:15px}
+.pub .t a{color:var(--ink);text-decoration:none}
+.pub .t a:hover{color:var(--link);text-decoration:underline}
+.pub .a{font-family:var(--ui);font-size:12.5px;color:var(--muted);line-height:1.45;margin-top:2px}
+.pub .a b{color:var(--body-ink);font-weight:500}
+.pub .v{font-size:13.5px;font-style:italic;color:var(--muted);margin-top:1px}
+.pub .v a{font-style:normal;font-family:var(--ui);font-size:12px;margin-left:7px;white-space:nowrap;color:var(--muted)}
+.pub .v a:hover{color:var(--link)}
+.pub[hidden]{display:none}
+
+/* ── cv ── */
+.entry{display:grid;grid-template-columns:88px 1fr;gap:14px;padding:7px 0;border-bottom:1px solid var(--rule)}
+.entry .when{font-family:var(--ui);font-size:12px;color:var(--muted);padding-top:2px}
+.entry b{font-weight:600;color:var(--ink);font-size:15px}
+.entry span.sub{display:block;font-size:14px;color:var(--muted);line-height:1.4}
+.subhead{font-family:var(--ui);font-size:12px;font-weight:600;color:var(--ink);margin:20px 0 6px;letter-spacing:.01em}
+
+/* ── contact ── */
+.rows{display:grid;gap:6px;font-family:var(--ui);font-size:13px}
+.rows div{display:grid;grid-template-columns:74px 1fr;gap:12px;align-items:baseline}
+.rows .k{font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.rows a{text-decoration:none;border-bottom:1px solid var(--rule);word-break:break-word}
+.rows a:hover{border-color:var(--link)}
+
+footer{
+  margin-top:40px;padding-top:14px;border-top:1px solid var(--rule);
+  font-family:var(--ui);font-size:11.5px;color:var(--muted);
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="page">
+
+<!-- ═══════════ SIDEBAR ═══════════ -->
+<aside class="side">
+  <!-- EDIT: replace photo.jpg (square, ~600×600) and the alt text with your name -->
+  <img class="photo" src="photo.jpg" alt="Bo Jayatilaka">
+  <h1>Bodhitha (Bo) Jayatilaka</h1>
+  <p class="role">Senior Scientist and Division Leader<br>Energy Frontier Division<br>Fermi National Accelerator Laboratory</p>
+  <nav>
+    <a href="#about">About</a>
+ <!--   <a href="#research">Research</a>-->
+    <a href="#publications">Selected Publications</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="meta">
+    <p><a href="https://www.fnal.gov/staff-directory/contact.html?to=cc212fdee9dae288b1912bddf3c8d268&name=Bo%20Jayatilaka">Email</a><br>Wilson Hall 1112</p>
+    <p><a href="cv.pdf">CV (PDF)</a> · <a href="https://orcid.org/0000-0001-7912-5612">ORCID</a><br>
+       <a href="https://scholar.google.com/citations?hl=en&user=zjNNC58AAAAJ&view_op=list_works">Scholar</a> · <a href="https://www.linkedin.com/in/bojayatilaka/">Linkedin</a></p> 
+  </div>
+</aside>
+
+<!-- ═══════════ MAIN ═══════════ -->
+<main id="main">
+
+<section id="about">
+  <h2>About</h2>
+  <p class="intro">I am an experimental particle physicist at Fermi National Accelerator Laboratory (Fermilab) specializing in high energy collider experiments. Since 2014, my research focus has been the CMS Experiment at the Large Hadron Collider (LHC) at CERN. I currently lead the Energy Frontier Division and the CMS Group at Fermilab. </p>
+  <p>My research focus on CMS has been on searches for new physics and on computing infrastructure and services. My group has explored possible dark matter signatures, including those with long-lived particles, in Run 2 data and are focusing on long-lived particle signatures for Run 3 of the LHC. Previously, on the CDF experiment, I led measurements of the W boson mass and top quark mass, and led a search for the Higgs boson decaying to bottom quarks.</p>
+</section>
+
+<!--
+<section id="research">
+  <h2>Research</h2>
+
+</section>
+-->
+<section id="publications">
+  <h2>Recent publications</h2>
+  <div id="publist"></div>
+  <p class="morelink">Full list:
+    <a href="https://scholar.google.com/citations?hl=en&user=zjNNC58AAAAJ&view_op=list_works">Google Scholar</a> ·
+    <a href="https://orcid.org/0000-0000-0000-0000">ORCID</a> ·
+    <a href="cv.pdf">CV (PDF)</a>
+  </p>
+</section>
+
+<section id="cv">
+  <h2>Curriculum vitae</h2>
+
+  <div class="entry"><span class="when">2023 —</span><span><b>Senior Scientist</b><span class="sub">Fermilab</span></span></div>
+  <div class="entry"><span class="when">2019 — 2023</span><span><b>Scientist</b><span class="sub">Fermilab</span></span></div>
+  <div class="entry"><span class="when">2016 — 2019</span><span><b>Applications Physicist II</b><span class="sub">Fermilab</span></span></div>
+  <div class="entry"><span class="when">2012 — 2016</span><span><b>Applications Physicist I</b><span class="sub">Fermilab</span></span></div>
+  <div class="entry"><span class="when">2006 – 2012</span><span><b>Postdoctoral Researcher</b><span class="sub">Duke University</span></span></div>
+  <div class="entry"><span class="when">2002 – 2006</span><span><b>PhD, Physics</b><span class="sub">University of Michigan · Advisor: Prof. D. Gerdes</span></span></div>
+  <div class="entry"><span class="when">1998 – 2002</span><span><b>BA, Physics</b><span class="sub">University of California, Berkeley</span></span></div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="rows">
+   <div><span class="k">Email</span><a href="https://www.fnal.gov/staff-directory/contact.html?to=cc212fdee9dae288b1912bddf3c8d268&name=Bo%20Jayatilaka">boj AT fnal.gov</a></div>
+    <div><span class="k">Office</span><span>Wilson Hall, Rm 1112</span></div>
+    <div><span class="k">Phone</span><span>+1 630 840 5110</span></div>
+    <div><span class="k">Mail</span><span>Fermi National Accelerator Laboratory, PO Box 500 Batavia, IL 60510</span></div>
+    <div><span class="k">ORCID</span><a href="https://orcid.org/0000-0001-7912-5612">0000-0001-7912-5612</a></div>
+  </div>
+</section>
+
+<footer>
+  <span>Last updated August 2026</span>
+  <span>Views are my own, not those of the laboratory or DOE.</span>
+</footer>
+
+</main>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════
+   EDIT HERE — the only block you touch regularly.
+   type: "journal" | "conf" | "report"
+   first: true if you are first (or co-first) author
+   ══════════════════════════════════════════════════════ */
+const YOU = "B. Jayatilaka";
+
+// How many of the most recent publications to display. Set to 0 to show all.
+const SHOW_LATEST = 5;
+
+const PUBS = [
+  {year:2026, month:8,  type:"journal", first:false,
+   title:"Search for dark matter produced in association with a dark Higgs boson decaying into a bottom quark-antiquark pair in proton-proton collisions at √s = 13 TeV",
+   authors:"CMS Collaboration: Sirunyan, A.M., Tumasyan, A., Jayatilaka B. et al.",
+   venue:"Eur. Phys. J. C (accepted)", doi:"10.48550/arXiv.2604.20999", url:"https://arxiv.org/abs/2604.20999"},
+
+  {year:2024, month:6,  type:"journal", first:false,
+   title:"Search for Soft Unclustered Energy Patterns in Proton-Proton Collisions at 13 TeV",
+   authors:"CMS Collaboration: Sirunyan, A.M., Tumasyan, A., Jayatilaka B. et al.",
+   venue:"Phys. Rev. Lett. 133 (2024), 191902", doi:"10.1103/PhysRevLett.133.191902", url:"https://arxiv.org/abs/2403.05311"},
+   
+  {year:2024, month:5,  type:"journal", first:false,
+   title:"Shedding light on the MiniBoone Excess with Searches at the LHC",
+   authors:"C. Herwig, J. Isaacson, B. Jayatilaka et al.",
+   venue:"	Phys. Rev. D 109 (2024), 075049", doi:"10.1103/PhysRevD.109.075049", url:"https://arxiv.org/abs/2310.13042"},
+
+ {year:2024, month:3,  type:"journal", first:false,
+   title:"Search for inelastic dark matter in events with two displaced muons and missing transverse momentum at √s = 13 TeV",
+   authors:"CMS Collaboration: Sirunyan, A.M., Tumasyan, A., Jayatilaka B. et al.",
+   venue:"Phys. Rev. Lett. 132 (2024) 041802", doi:"10.1103/PhysRevLett.132.041802", url:"https://arxiv.org/abs/2305.11649"},
+   
+ {year:2022, month:3,  type:"journal", first:false,
+   title:"High-precision measurement of the W boson mass with the CDF II detector",
+   authors:"CDF Collaboration: T. Aaltonen, B. Jayatilaka et al.",
+   venue:"Science 376 (2022), 170", doi:"10.1126/science.abk1781", url:"https://www.science.org/doi/10.1126/science.abk1781"},
+
+];
+/* ═════════════ stop editing here ═════════════ */
+
+const sorted = [...PUBS].sort((a,b)=> b.year-a.year || b.month-a.month);
+const shown = SHOW_LATEST > 0 ? sorted.slice(0, SHOW_LATEST) : sorted;
+
+document.getElementById("publist").innerHTML = shown.map(p=>{
+  const authors = p.authors.split(", ").map(a=> a===YOU ? "<b>"+a+"</b>" : a).join(", ");
+  const doi = p.doi ? '<a href="https://doi.org/'+p.doi+'">doi:'+p.doi+'</a>' : "";
+  const title = (p.url && p.url !== "#") ? '<a href="'+p.url+'">'+p.title+'</a>' : p.title;
+  return '<article class="pub">'
+    + '<div class="yr">'+p.year+'</div>'
+    + '<div><div class="t">'+title+'</div>'
+    + '<div class="a">'+authors+'</div>'
+    + '<div class="v">'+p.venue+doi+'</div></div></article>';
+}).join("");
+</script>
+
+<!-- Structured data for search engines. Edit the values. -->
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Bodhitha (Bo) Jayatilaka",
+  "jobTitle":"Scientist, Particle Physicist",
+  "affiliation":{"@type":"Organization","name":"Fermi National Accelerator Laboratory"},
+  "url":"https://bodhitha.github.io/",
+  "sameAs":["https://orcid.org/0000-0001-7912-5612"]
+}
+</script>
+</body>
+</html>
